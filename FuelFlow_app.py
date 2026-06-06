@@ -97,6 +97,5 @@ if st.button("Calculate ETS Liability", type="primary"):
         st.metric("ETS Allowances Required", f"{eua_count:,.2f} EUAs")
     
     with col6:
-       
-    st.markdown("---")
+       st.markdown("---")
     st.caption("Calculated per EU MRV Regulation (EU) 2015/757 Annex M3 | Validated against THETIS-MRV verified vessel data to 0.21% variance")
