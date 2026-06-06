@@ -82,7 +82,7 @@ if st.button("Calculate ETS Liability", type="primary"):
     ets_liability = co2t * ets_price * l * p
 
     st.header("Results")
-    col3, col4, col5 = st.columns(3)
+    col3, col4 = st.columns(2)
 
     with col3:
         st.metric("Total CO₂ Equivalent", f"{co2t:,.2f} tonnes")
@@ -90,9 +90,13 @@ if st.button("Calculate ETS Liability", type="primary"):
     with col4:
         st.metric("ETS Liability", f"€{ets_liability:,.2f}")
 
+    col5, col6 = st.columns(2)
+    
     with col5:
         eua_count = co2t * l * p
         st.metric("ETS Allowances Required", f"{eua_count:,.2f} EUAs")
+    
+    with col6:
        
     st.markdown("---")
     st.caption("Calculated per EU MRV Regulation (EU) 2015/757 Annex M3 | Validated against THETIS-MRV verified vessel data to 0.21% variance")
