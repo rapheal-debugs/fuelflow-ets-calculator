@@ -46,7 +46,7 @@ st.header("Vessel Inputs")
 col1, col2 = st.columns(2)
 
 with col1:
-    mi = st.number_input("Annual Fuel Consumption (tonnes)", min_value=0.0, value=20000)
+    mi = st.number_input("Annual Fuel Consumption (tonnes)", min_value=0.0, value=20000.0)
     fuel_type = st.selectbox("Fuel Type", options=list(fuel_data.keys()))
     voyage_type = st.selectbox("Voyage Type", options=["NonEU_EU", "EU_EU", "Berth_at_EU"])
 
