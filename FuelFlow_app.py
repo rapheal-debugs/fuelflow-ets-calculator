@@ -99,3 +99,6 @@ if st.button("Calculate ETS Liability", type="primary"):
     with col6:
        st.markdown("---")
     st.caption("Calculated per EU MRV Regulation (EU) 2015/757 Annex M3 | Validated against THETIS-MRV verified vessel data to 0.21% variance")
+
+st.markdown("---")
+st.caption("Using FuelFlow for your fleet or compliance reporting? Reach out: oluyomirapheal@gmail.com")
