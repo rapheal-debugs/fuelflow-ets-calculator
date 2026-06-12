@@ -52,7 +52,7 @@ with col1:
 
 with col2:
     reporting_year = st.selectbox("Reporting Year", options=["2024", "2025", "2026 onwards"])
-    ets_price = st.number_input("EU ETS Carbon Price (€/tonne)", min_value=0.0, value=76.3)
+    ets_price = st.number_input("EU ETS Carbon Price (€/tonne)", min_value=0.0, value=76.80)
 
 st.markdown("---")
 
